@@ -1,0 +1,401 @@
+/* define font */
+/* font tag, and attributes: color, face, size are not supported in html5 */
+/*
+font property is a shorthand property for:
+font-style font-variant font-weight font-size/line-height font-family
+font: font-style font-variant font-weight font-size/line-height font-family|caption|icon|menu|message-box|small-caption|status-bar|initial|inherit;
+The font-size and font-family values are required. If one of the other values is missing, their default value are used.
+
+font-style: normal|italic|oblique|initial|inherit;
+font-variant: normal|small-caps|initial|inherit;
+font-weight: normal|bold|bolder|lighter|number|initial|inherit;
+font-size:medium|xx-small|x-small|small|large|x-large|xx-large|smaller|larger|length|initial|inherit;
+line-height: normal|number|length|initial|inherit;
+font-family: family-name|generic-family|initial|inherit;
+
+font-family: Arial;
+font-family: Verdana;
+font-family: Georgia;
+*/
+
+/* http://www.font2web.com//?error=no_file_uploaded */
+@font-face {
+    font-family: 'english_towneregular';
+  	src: url('fonts/EnglishTowne.eot');
+  	src: url('fonts/EnglishTowne.eot?#iefix') format('embedded-opentype'),
+           url('fonts/EnglishTowne.woff') format('woff'),
+           url('fonts/EnglishTowne.ttf') format('truetype'),
+           url('fonts/EnglishTowne.svg') format('svg');
+    }
+
+@font-face {
+    font-family: 'bevan';
+    src: url('fonts/Bevan.eot');
+  	src:  url('fonts/Bevan.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Bevan.woff') format('woff'),
+    url('fonts/Bevan.ttf') format('truetype'),
+    url('fonts/Bevan.svg') format('svg');
+
+  }
+
+  @font-face {
+  	font-family: 'Anaphora-Fat-trial';
+  	src: url('fonts/Anaphora-Fat-trial.eot');
+  	src:   url('fonts/Anaphora-Fat-trial.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Anaphora-Fat-trial.woff') format('woff'),
+    url('fonts/Anaphora-Fat-trial.ttf') format('truetype'),
+    url('fonts/Anaphora-Fat-trial.svg') format('svg');
+}
+  @font-face {
+  	font-family: 'Anaphora-Medium-trial';
+  	src: url('fonts/Anaphora-Medium-trial.eot');
+  	src:   url('fonts/Anaphora-Medium-trial.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Anaphora-Medium-trial.woff') format('woff'),
+    url('fonts/Anaphora-Medium-trial.ttf') format('truetype'),
+    url('fonts/Anaphora-Medium-trial.svg') format('svg');
+  }
+  @font-face {
+  	font-family: 'AMERIKA';
+  	src: url('fonts/AMERIKA_.eot');
+  	src: url('fonts/AMERIKA_.eot?#iefix') format('embedded-opentype') ,
+    url('fonts/AMERIKA_.woff') format('woff'),
+    url('fonts/AMERIKA_.ttf') format('truetype'),
+    url('fonts/AMERIKA_.svg') format('svg');
+
+  }
+
+  @font-face {
+	font-family: 'IBMPlexSans-Bold';
+	src: url('fonts/IBMPlexSans-Bold.eot');
+	src:  url('fonts/IBMPlexSans-Bold.eot?#iefix') format('embedded-opentype'),
+  url('fonts/IBMPlexSans-Bold.woff') format('woff'),
+       url('fonts/IBMPlexSans-Bold.ttf') format('truetype'),
+        url('fonts/IBMPlexSans-Bold.svg') format('svg');
+}
+@font-face {
+	font-family: 'IBMPlexSans-Light';
+	src: url('fonts/IBMPlexSans-Light.eot?#iefix') format('embedded-opentype');
+	src:  url('fonts/IBMPlexSans-Light.eot'),
+      url('fonts/IBMPlexSans-Light.woff') format('woff'),
+      url('fonts/IBMPlexSans-Light.ttf') format('truetype'),
+      url('fonts/IBMPlexSans-Light.svg') format('svg');
+}
+@font-face {
+	font-family: 'LibreFranklin-SemiBold';
+  font-style: normal;
+  font-weight: normal;
+	src:  url('fonts/LibreFranklin-SemiBold.eot');
+	src:  url('fonts/LibreFranklin-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/LibreFranklin-SemiBold.woff') format('woff'),
+        url('fonts/LibreFranklin-SemiBold.ttf') format('truetype'),
+        url('fonts/LibreFranklin-SemiBold.svg') format('svg');
+}
+/* font family */
+.font-bevan{  font-family: 'bevan';}
+.font-ibm{  font-family: 'IBMPlexSans-Light';}
+.font-et{
+  font-family: 'english_towneregular';
+  font-weight: lighter;
+}
+.font-verdana{  font-family: Verdana;}
+
+.font-amerika{  	font-family: 'AMERIKA';    }
+.font-anaph{      font-family: 'Anaphora-Medium-trial';    }
+.font-arial{  font-family: Arial;      }
+.font-georgia{font-family: Georgia;}
+.font-ibmb{	font-family: 'IBMPlexSans-Bold';}
+.font-libre{	font-family: 'LibreFranklin-SemiBold';}
+
+html, body{
+  height:100%;
+}
+
+body{
+  display:flex;
+  flex-direction: column;
+
+}
+/* frame work here */
+header{
+  background-color: white;
+  box-shadow: 2px 11px 22px -2px #000000;
+  height:90px;
+  position:fixed;
+  width:100%;
+}
+.rowtwo{
+  background-color: #fb7777;
+  margin:90px 0 0 0;
+  text-align:center;
+  width:100%;
+}
+.main{
+  display: flex;
+  flex:0 0 auto;
+  flex-direction: row;
+  flex-wrap:wrap;
+    margin:0 20vh auto 20vh;
+}
+
+
+.column-one{
+  display: flex;
+  flex:1 0  auto;
+
+  width: 100%;
+}
+.column-two{
+  display: flex;
+  flex:0 1 auto;
+  margin:1em;
+  width: 45%;
+}
+.column-three{
+  display: flex;
+  flex:1 1 auto;
+  margin:1em;
+  width: 30%;
+}
+.column-four{
+  display: flex;
+  flex:1 1 auto;
+  margin:1em;
+  width: 25%;
+}
+
+/* frame work ends */
+
+select{  /*remove selection box dec*/
+  border:0;
+  outline: 0;
+  background: white;
+}
+
+.checkmark-list{ /* for check mark*/
+  float:left;
+  padding-top:0;
+}
+
+.checkmark-content{
+  display:inline-block;
+  font-size: 18px;
+  line-height:1.5;
+  margin-left:10px;
+  width:85%;
+
+}
+.wfbb{ /*white font, black background*/
+  background-color: #000000;
+  color: white;
+}
+
+.alignCenter{
+  font-family: "Arial Black", Gadget, sans-serif ;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: 100%;
+   min-width: 20%;
+   padding:7px 0 7px 0;
+  text-align: center;
+  text-decoration: underline;
+}
+
+
+.color-white { /*a link color white */
+  color: white;
+}
+.color-black { /*a link color black  */
+  color: black;}
+.color-yellow{
+    color:yellow;
+}
+.color-blue{
+  color:#0a68b2d9;
+}
+
+
+.font-small{
+  font-size:14px;
+}
+.font-medium{
+  font-size:20px;
+}
+.font-large{
+  font-size:30px;
+}
+.font-xlarge{
+  font-size:44px;
+}
+
+.textcenter{
+  text-align: center;
+}
+
+a:hover{    /*underline when moving on the link */
+  text-decoration:underline;
+    background:transparent;
+}
+
+.menu-line2{
+  margin:1vw 0 1vw 0;
+
+}
+
+
+.pm-left{
+  display:inline-block;
+
+  margin:auto 10% auto 0;
+  text-indent:5px;
+  width:25vw;
+
+}
+.pm-center{
+  display:inline-block;
+  width:40vw;
+}
+.pm-right{
+  display:inline-block;
+  text-align: right;
+  width:22vw;
+}
+
+a{
+  text-decoration:none;
+}
+
+span>a{
+  text-decoration: underline;
+}
+
+
+/*flex-direction: row;
+align-content:space-around;
+overflow-x:scroll;
+align-self:center;
+justify-content: space-between;
+*/
+
+/* display:inline-flex;   /* */
+/*display:inline-block;   /* */
+
+/*flex-grow: 0.6;  /* fill up the height of screen */
+
+
+/*overflow-y:auto;   /* add scroll */
+
+  /*select div where parent is main */
+/*flex-direction: row;*/
+
+/* flex-grow:1;  /* fill up the height of screen */
+/*overflow-y:auto;   /* add scroll */
+
+
+
+
+
+.basic{
+  background:#2e84ed;
+  border-radius:6px;
+  box-sizing:border-box;
+  color:#fff;
+  height:185px;
+  padding:4px 0 0 10px;
+  text-align:left;
+  width:40vh;
+  min-width:20vh;
+}
+
+.basic-title{
+  color:#fff000;
+  font-family:nyt-franklin,Helvetica Neue,Arial,sans-serif;
+  font-size:26px;
+  min-height:20px;
+}
+
+.button-wrap{
+  background:hsla(1,10%,100%,.4);
+
+  border-radius:5px;
+  color:#ffffff;
+  margin:0 11px 0 11px;
+  padding:1px;
+  text-align:center;
+}
+
+.fivebox{
+  background:#989aa2a3;
+  border-radius:5px;
+  margin:0 11px 0 11px;
+  padding:20px;
+  text-align:left;
+}
+.allfaq{
+  background:#0090ff;
+  border-radius:5px;
+  color:#ffffff;
+  padding:1vw 6vw 1vw 6vw;
+  text-align:center;
+}
+
+/*
+refer:https://alligator.io/css/collapsible/
+*/
+
+
+input[type='checkbox'] {
+  display: none;
+}
+
+.label-collapsible {
+  cursor: pointer; /*hands like cursor */
+  display: block;
+  font-family: monospace;
+  font-size: 1.2rem;
+font-weight: bold;
+}
+
+.label-collapsible:hover {  color: #7C5A0B;}
+
+.label-collapsible::before {
+  content: '+';
+  display: inline-block;
+  transition: transform .2s ease-out;
+}
+
+.collapsible:checked + .label-collapsible::before {
+  /*
+  div+p  :Selects all <p> elements that are placed immediately after <div> elements
+  a:active	Selects the active link
+  p::before	Insert something before the content of each <p> element
+  */
+content: '-';
+}
+
+.faq-content {
+  font-family:nyt-franklin,Helvetica Neue,Arial,sans-serif;
+
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height .25s ease-in-out;
+}
+
+.collapsible:checked + .label-collapsible + .faq-content {
+  max-height: 700px;
+}
+
+
+
+/* footer */
+.darkgrey{
+  background-color: #190e0ecf;
+}
+
+ul{
+  list-style:none;
+  line-height: 2.5;
+  }
+
+
+
+  /* The End */
