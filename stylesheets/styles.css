@@ -38,31 +38,7 @@ font-family: Georgia;
 
   }
 
-  @font-face {
-  	font-family: 'Anaphora-Fat-trial';
-  	src: url('fonts/Anaphora-Fat-trial.eot');
-  	src:   url('fonts/Anaphora-Fat-trial.eot?#iefix') format('embedded-opentype'),
-    url('fonts/Anaphora-Fat-trial.woff') format('woff'),
-    url('fonts/Anaphora-Fat-trial.ttf') format('truetype'),
-    url('fonts/Anaphora-Fat-trial.svg') format('svg');
-}
-  @font-face {
-  	font-family: 'Anaphora-Medium-trial';
-  	src: url('fonts/Anaphora-Medium-trial.eot');
-  	src:   url('fonts/Anaphora-Medium-trial.eot?#iefix') format('embedded-opentype'),
-    url('fonts/Anaphora-Medium-trial.woff') format('woff'),
-    url('fonts/Anaphora-Medium-trial.ttf') format('truetype'),
-    url('fonts/Anaphora-Medium-trial.svg') format('svg');
-  }
-  @font-face {
-  	font-family: 'AMERIKA';
-  	src: url('fonts/AMERIKA_.eot');
-  	src: url('fonts/AMERIKA_.eot?#iefix') format('embedded-opentype') ,
-    url('fonts/AMERIKA_.woff') format('woff'),
-    url('fonts/AMERIKA_.ttf') format('truetype'),
-    url('fonts/AMERIKA_.svg') format('svg');
 
-  }
 
   @font-face {
 	font-family: 'IBMPlexSans-Bold';
@@ -97,12 +73,6 @@ font-family: Georgia;
   font-family: 'english_towneregular';
   font-weight: lighter;
 }
-.font-verdana{  font-family: Verdana;}
-
-.font-amerika{  	font-family: 'AMERIKA';    }
-.font-anaph{      font-family: 'Anaphora-Medium-trial';    }
-.font-arial{  font-family: Arial;      }
-.font-georgia{font-family: Georgia;}
 .font-ibmb{	font-family: 'IBMPlexSans-Bold';}
 .font-libre{	font-family: 'LibreFranklin-SemiBold';}
 
@@ -165,10 +135,11 @@ header{
 
 /* frame work ends */
 
-select{  /*remove selection box dec*/
-  border:0;
-  outline: 0;
+/*remove selection box dec*/
+select{
   background: white;
+  border:0;
+
 }
 
 .checkmark-list{ /* for check mark*/
@@ -232,8 +203,8 @@ select{  /*remove selection box dec*/
 }
 
 a:hover{    /*underline when moving on the link */
+  background:transparent;
   text-decoration:underline;
-    background:transparent;
 }
 
 .menu-line2{
@@ -269,41 +240,16 @@ span>a{
 }
 
 
-/*flex-direction: row;
-align-content:space-around;
-overflow-x:scroll;
-align-self:center;
-justify-content: space-between;
-*/
-
-/* display:inline-flex;   /* */
-/*display:inline-block;   /* */
-
-/*flex-grow: 0.6;  /* fill up the height of screen */
-
-
-/*overflow-y:auto;   /* add scroll */
-
-  /*select div where parent is main */
-/*flex-direction: row;*/
-
-/* flex-grow:1;  /* fill up the height of screen */
-/*overflow-y:auto;   /* add scroll */
-
-
-
-
-
 .basic{
   background:#2e84ed;
   border-radius:6px;
   box-sizing:border-box;
   color:#fff;
   height:185px;
+  min-width:20vh;
   padding:4px 0 0 10px;
   text-align:left;
   width:40vh;
-  min-width:20vh;
 }
 
 .basic-title{
@@ -315,7 +261,6 @@ justify-content: space-between;
 
 .button-wrap{
   background:hsla(1,10%,100%,.4);
-
   border-radius:5px;
   color:#ffffff;
   margin:0 11px 0 11px;
@@ -375,7 +320,7 @@ content: '-';
 .faq-content {
   font-family:nyt-franklin,Helvetica Neue,Arial,sans-serif;
 
-  max-height: 0px;
+  max-height: 0;
   overflow: hidden;
   transition: max-height .25s ease-in-out;
 }
@@ -392,9 +337,9 @@ content: '-';
 }
 
 ul{
-  list-style:none;
   line-height: 2.5;
-  }
+  list-style:none;
+}
 
 
 
