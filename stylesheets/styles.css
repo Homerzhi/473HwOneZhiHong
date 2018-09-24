@@ -94,7 +94,7 @@ header{
   width:100%;
 }
 .rowtwo{
-  background-color: #fb7777;
+  background-color: #f26860;
   margin:90px 0 0 0;
   text-align:center;
   width:100%;
@@ -178,13 +178,14 @@ select{
 .color-black { /*a link color black  */
   color: black;}
 .color-yellow{
-    color:yellow;
+    color:#fbff5a;
 }
 .color-blue{
-  color:#0a68b2d9;
+  color: #4d7ef4;
 }
-
-
+.skyblue{background-color:#4d7ef4;}
+.seablue{background-color: #254398;}
+.deepsea{background-color: #282828;}
 .font-small{
   font-size:14px;
 }
@@ -241,11 +242,11 @@ span>a{
 
 
 .basic{
-  background:#2e84ed;
+  /* background:#2e84ed; */
   border-radius:6px;
   box-sizing:border-box;
   color:#fff;
-  height:185px;
+  min-height:205px;
   min-width:20vh;
   padding:4px 0 0 10px;
   text-align:left;
@@ -253,30 +254,34 @@ span>a{
 }
 
 .basic-title{
-  color:#fff000;
+
   font-family:nyt-franklin,Helvetica Neue,Arial,sans-serif;
   font-size:26px;
   min-height:20px;
 }
 
 .button-wrap{
-  background:hsla(1,10%,100%,.4);
+  background:#979797;
   border-radius:5px;
-  color:#ffffff;
-  margin:0 11px 0 11px;
+
+  margin:10px 19px 0 11px;
   padding:1px;
   text-align:center;
 }
+.button-wrap:hover{
+  background:#ffffff;
+  color:#000000;
+}
 
 .fivebox{
-  background:#989aa2a3;
+  background:#ededec;
   border-radius:5px;
   margin:0 11px 0 11px;
   padding:20px;
   text-align:left;
 }
 .allfaq{
-  background:#0090ff;
+  background:#4d7ef4;
   border-radius:5px;
   color:#ffffff;
   padding:1vw 6vw 1vw 6vw;
@@ -333,7 +338,7 @@ content: '-';
 
 /* footer */
 .darkgrey{
-  background-color: #190e0ecf;
+  background-color: #202022;
 }
 
 ul{
