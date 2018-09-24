@@ -17,295 +17,325 @@ font-family: Arial;
 font-family: Verdana;
 font-family: Georgia;
 */
-
 /* http://www.font2web.com//?error=no_file_uploaded */
 @font-face {
-    font-family: 'english_towneregular';
-  	src: url('fonts/EnglishTowne.eot');
-  	src: url('fonts/EnglishTowne.eot?#iefix') format('embedded-opentype'),
-           url('fonts/EnglishTowne.woff') format('woff'),
-           url('fonts/EnglishTowne.ttf') format('truetype'),
-           url('fonts/EnglishTowne.svg') format('svg');
-    }
+  font-family: 'english_towneregular';
+  src: url('fonts/EnglishTowne.eot');
+  src: url('fonts/EnglishTowne.eot?#iefix') format('embedded-opentype'),
+    url('fonts/EnglishTowne.woff') format('woff'),
+    url('fonts/EnglishTowne.ttf') format('truetype'),
+    url('fonts/EnglishTowne.svg') format('svg');
+}
 
 @font-face {
-    font-family: 'bevan';
-    src: url('fonts/Bevan.eot');
-  	src:  url('fonts/Bevan.eot?#iefix') format('embedded-opentype'),
+  font-family: 'bevan';
+  src: url('fonts/Bevan.eot');
+  src: url('fonts/Bevan.eot?#iefix') format('embedded-opentype'),
     url('fonts/Bevan.woff') format('woff'),
     url('fonts/Bevan.ttf') format('truetype'),
     url('fonts/Bevan.svg') format('svg');
-
-  }
-
-
-
-  @font-face {
-	font-family: 'IBMPlexSans-Bold';
-	src: url('fonts/IBMPlexSans-Bold.eot');
-	src:  url('fonts/IBMPlexSans-Bold.eot?#iefix') format('embedded-opentype'),
-  url('fonts/IBMPlexSans-Bold.woff') format('woff'),
-       url('fonts/IBMPlexSans-Bold.ttf') format('truetype'),
-        url('fonts/IBMPlexSans-Bold.svg') format('svg');
 }
+
 @font-face {
-	font-family: 'IBMPlexSans-Light';
-	src: url('fonts/IBMPlexSans-Light.eot?#iefix') format('embedded-opentype');
-	src:  url('fonts/IBMPlexSans-Light.eot'),
-      url('fonts/IBMPlexSans-Light.woff') format('woff'),
-      url('fonts/IBMPlexSans-Light.ttf') format('truetype'),
-      url('fonts/IBMPlexSans-Light.svg') format('svg');
+  font-family: 'IBMPlexSans-Bold';
+  src: url('fonts/IBMPlexSans-Bold.eot');
+  src: url('fonts/IBMPlexSans-Bold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/IBMPlexSans-Bold.woff') format('woff'),
+    url('fonts/IBMPlexSans-Bold.ttf') format('truetype'),
+    url('fonts/IBMPlexSans-Bold.svg') format('svg');
 }
+
 @font-face {
-	font-family: 'LibreFranklin-SemiBold';
+  font-family: 'IBMPlexSans-Light';
+  src: url('fonts/IBMPlexSans-Light.eot?#iefix') format('embedded-opentype');
+  src: url('fonts/IBMPlexSans-Light.eot'),
+    url('fonts/IBMPlexSans-Light.woff') format('woff'),
+    url('fonts/IBMPlexSans-Light.ttf') format('truetype'),
+    url('fonts/IBMPlexSans-Light.svg') format('svg');
+}
+
+@font-face {
+  font-family: 'LibreFranklin-SemiBold';
   font-style: normal;
   font-weight: normal;
-	src:  url('fonts/LibreFranklin-SemiBold.eot');
-	src:  url('fonts/LibreFranklin-SemiBold.eot?#iefix') format('embedded-opentype'),
-        url('fonts/LibreFranklin-SemiBold.woff') format('woff'),
-        url('fonts/LibreFranklin-SemiBold.ttf') format('truetype'),
-        url('fonts/LibreFranklin-SemiBold.svg') format('svg');
+  src: url('fonts/LibreFranklin-SemiBold.eot');
+  src: url('fonts/LibreFranklin-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/LibreFranklin-SemiBold.woff') format('woff'),
+    url('fonts/LibreFranklin-SemiBold.ttf') format('truetype'),
+    url('fonts/LibreFranklin-SemiBold.svg') format('svg');
 }
+
 /* font family */
-.font-bevan{  font-family: 'bevan';}
-.font-ibm{  font-family: 'IBMPlexSans-Light';}
-.font-et{
+.font-bevan {
+  font-family: 'bevan';
+}
+
+.font-ibm {
+  font-family: 'IBMPlexSans-Light';
+}
+
+.font-et {
   font-family: 'english_towneregular';
   font-weight: lighter;
 }
-.font-ibmb{	font-family: 'IBMPlexSans-Bold';}
-.font-libre{	font-family: 'LibreFranklin-SemiBold';}
 
-html, body{
-  height:100%;
+.font-ibmb {
+  font-family: 'IBMPlexSans-Bold';
 }
 
-body{
-  display:flex;
+.font-libre {
+  font-family: 'LibreFranklin-SemiBold';
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
   flex-direction: column;
-
 }
+
 /* frame work here */
-header{
+header {
   background-color: white;
   box-shadow: 2px 11px 22px -2px #000000;
-  height:90px;
-  position:fixed;
-  width:100%;
-}
-.rowtwo{
-  background-color: #f26860;
-  margin:90px 0 0 0;
-  text-align:center;
-  width:100%;
-}
-.main{
-  display: flex;
-  flex:0 0 auto;
-  flex-direction: row;
-  flex-wrap:wrap;
-    margin:0 20vh auto 20vh;
-}
-
-
-.column-one{
-  display: flex;
-  flex:1 0  auto;
-
+  height: 90px;
+  position: fixed;
   width: 100%;
 }
-.column-two{
+
+.rowtwo {
+  background-color: #f26860;
+  margin: 90px 0 0 0;
+  text-align: center;
+  width: 100%;
+}
+
+.main {
   display: flex;
-  flex:0 1 auto;
-  margin:1em;
+  flex: 0 0 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 20vh auto 20vh;
+}
+
+.column-one {
+  display: flex;
+  flex: 1 0 auto;
+  width: 100%;
+}
+
+.column-two {
+  display: flex;
+  flex: 0 1 auto;
+  margin: 1em;
   width: 45%;
 }
-.column-three{
+
+.column-three {
   display: flex;
-  flex:1 1 auto;
-  margin:1em;
+  flex: 1 1 auto;
+  margin: 1em;
   width: 30%;
 }
-.column-four{
+
+.column-four {
   display: flex;
-  flex:1 1 auto;
-  margin:1em;
+  flex: 1 1 auto;
+  margin: 1em;
   width: 25%;
 }
 
 /* frame work ends */
-
 /*remove selection box dec*/
-select{
+select {
   background: white;
-  border:0;
-
+  border: 0;
 }
 
-.checkmark-list{ /* for check mark*/
-  float:left;
-  padding-top:0;
+.checkmark-list {
+  /* for check mark*/
+  float: left;
+  padding-top: 0;
 }
 
-.checkmark-content{
-  display:inline-block;
+.checkmark-content {
+  display: inline-block;
   font-size: 18px;
-  line-height:1.5;
-  margin-left:10px;
-  width:85%;
-
+  line-height: 1.5;
+  margin-left: 10px;
+  width: 85%;
 }
-.wfbb{ /*white font, black background*/
+
+.wfbb {
+  /*white font, black background*/
   background-color: #000000;
   color: white;
 }
 
-.alignCenter{
-  font-family: "Arial Black", Gadget, sans-serif ;
-   margin-left: auto;
-   margin-right: auto;
-   max-width: 100%;
-   min-width: 20%;
-   padding:7px 0 7px 0;
+.alignCenter {
+  font-family: "Arial Black", Gadget, sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  min-width: 20%;
+  padding: 7px 0 7px 0;
   text-align: center;
   text-decoration: underline;
 }
 
-
-.color-white { /*a link color white */
+.color-white {
+  /*a link color white */
   color: white;
 }
-.color-black { /*a link color black  */
-  color: black;}
-.color-yellow{
-    color:#fbff5a;
-}
-.color-blue{
-  color: #4d7ef4;
-}
-.skyblue{background-color:#4d7ef4;}
-.seablue{background-color: #254398;}
-.deepsea{background-color: #282828;}
-.font-small{
-  font-size:14px;
-}
-.font-medium{
-  font-size:20px;
-}
-.font-large{
-  font-size:30px;
-}
-.font-xlarge{
-  font-size:44px;
+
+.color-black {
+  /*a link color black  */
+  color: black;
 }
 
-.textcenter{
+.color-yellow {
+  color: #fbff5a;
+}
+
+.color-blue {
+  color: #4d7ef4;
+}
+
+.skyblue {
+  background-color: #4d7ef4;
+}
+
+.seablue {
+  background-color: #254398;
+}
+
+.deepsea {
+  background-color: #282828;
+}
+
+.font-small {
+  font-size: 14px;
+}
+
+.font-medium {
+  font-size: 20px;
+}
+
+.font-large {
+  font-size: 30px;
+}
+
+.font-xlarge {
+  font-size: 44px;
+}
+
+.textcenter {
   text-align: center;
 }
 
-a:hover{    /*underline when moving on the link */
-  background:transparent;
-  text-decoration:underline;
-}
-
-.menu-line2{
-  margin:1vw 0 1vw 0;
-
-}
-
-
-.pm-left{
-  display:inline-block;
-
-  margin:auto 10% auto 0;
-  text-indent:5px;
-  width:25vw;
-
-}
-.pm-center{
-  display:inline-block;
-  width:40vw;
-}
-.pm-right{
-  display:inline-block;
-  text-align: right;
-  width:22vw;
-}
-
-a{
-  text-decoration:none;
-}
-
-span>a{
+a:hover {
+  /*underline when moving on the link */
+  background: transparent;
   text-decoration: underline;
 }
 
-
-.basic{
-  /* background:#2e84ed; */
-  border-radius:6px;
-  box-sizing:border-box;
-  color:#fff;
-  min-height:205px;
-  min-width:20vh;
-  padding:4px 0 0 10px;
-  text-align:left;
-  width:40vh;
+.menu-line2 {
+  margin: 1vw 0 1vw 0;
 }
 
-.basic-title{
-
-  font-family:nyt-franklin,Helvetica Neue,Arial,sans-serif;
-  font-size:26px;
-  min-height:20px;
+.pm-left {
+  display: inline-block;
+  margin: auto 10% auto 0;
+  text-indent: 5px;
+  width: 25vw;
 }
 
-.button-wrap{
-  background:#979797;
-  border-radius:5px;
-
-  margin:10px 19px 0 11px;
-  padding:1px;
-  text-align:center;
-}
-.button-wrap:hover{
-  background:#ffffff;
-  color:#000000;
+.pm-center {
+  display: inline-block;
+  width: 40vw;
 }
 
-.fivebox{
-  background:#ededec;
-  border-radius:5px;
-  margin:0 11px 0 11px;
-  padding:20px;
-  text-align:left;
+.pm-right {
+  display: inline-block;
+  text-align: right;
+  width: 22vw;
 }
-.allfaq{
-  background:#4d7ef4;
-  border-radius:5px;
-  color:#ffffff;
-  padding:1vw 6vw 1vw 6vw;
-  text-align:center;
+
+a {
+  text-decoration: none;
+}
+
+span>a {
+  text-decoration: underline;
+}
+
+.basic {
+  border-radius: 6px;
+  box-sizing: border-box;
+  color: #fff;
+  min-height: 205px;
+  min-width: 20vh;
+  padding: 4px 0 0 10px;
+  text-align: left;
+  width: 40vh;
+}
+
+.basic-title {
+  font-family: nyt-franklin, Helvetica Neue, Arial, sans-serif;
+  font-size: 26px;
+  min-height: 20px;
+}
+
+.button-wrap {
+  background: #979797;
+  border-radius: 5px;
+  margin: 10px 19px 0 11px;
+  padding: 1px;
+  text-align: center;
+}
+
+.button-wrap:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+.fivebox {
+  background: #ededec;
+  border-radius: 5px;
+  margin: 0 11px 0 11px;
+  padding: 20px;
+  text-align: left;
+}
+
+.allfaq {
+  background: #4d7ef4;
+  border-radius: 5px;
+  color: #ffffff;
+  padding: 1vw 6vw 1vw 6vw;
+  text-align: center;
 }
 
 /*
 refer:https://alligator.io/css/collapsible/
 */
-
-
 input[type='checkbox'] {
   display: none;
 }
 
 .label-collapsible {
-  cursor: pointer; /*hands like cursor */
+  cursor: pointer;
+  /*hands like cursor */
   display: block;
   font-family: monospace;
   font-size: 1.2rem;
-font-weight: bold;
+  font-weight: bold;
 }
 
-.label-collapsible:hover {  color: #7C5A0B;}
+.label-collapsible:hover {
+  color: #7C5A0B;
+}
 
 .label-collapsible::before {
   content: '+';
@@ -313,39 +343,34 @@ font-weight: bold;
   transition: transform .2s ease-out;
 }
 
-.collapsible:checked + .label-collapsible::before {
+.collapsible:checked+.label-collapsible::before {
   /*
   div+p  :Selects all <p> elements that are placed immediately after <div> elements
   a:active	Selects the active link
   p::before	Insert something before the content of each <p> element
   */
-content: '-';
+  content: '-';
 }
 
 .faq-content {
-  font-family:nyt-franklin,Helvetica Neue,Arial,sans-serif;
-
+  font-family: nyt-franklin, Helvetica Neue, Arial, sans-serif;
   max-height: 0;
   overflow: hidden;
   transition: max-height .25s ease-in-out;
 }
 
-.collapsible:checked + .label-collapsible + .faq-content {
+.collapsible:checked+.label-collapsible+.faq-content {
   max-height: 700px;
 }
 
-
-
 /* footer */
-.darkgrey{
+.darkgrey {
   background-color: #202022;
 }
 
-ul{
+ul {
   line-height: 2.5;
-  list-style:none;
+  list-style: none;
 }
 
-
-
-  /* The End */
+/* The End */
